@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nathan Walker · Solutions Architect Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resume-layout.css" />
+    <style>
+      .parloa-resume .competency-column {
+        border: 1px solid var(--color-border);
+        border-radius: 8px;
+        padding: 0.45rem 0.5rem 0.5rem;
+        background: var(--color-chip-bg);
+      }
+
+      .parloa-resume .competency-column .chip-list.dense {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.28rem;
+      }
+
+      .parloa-resume .competency-column .chip-list.dense li {
+        display: block;
+        text-align: center;
+        background: var(--color-bg);
+      }
+
+      .parloa-resume .role-fit-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-sm);
+      }
+
+      .parloa-resume .role-fit-card {
+        border: 1px solid var(--color-border);
+        border-radius: 8px;
+        padding: 0.45rem 0.5rem;
+        background: var(--color-chip-bg);
+      }
+
+      .parloa-resume .role-fit-card h3 {
+        margin: 0 0 0.25rem;
+        font-size: var(--text-xs);
+        font-family: var(--font-mono);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--color-text-muted);
+      }
+
+      .parloa-resume .role-fit-card p {
+        margin: 0;
+        font-size: var(--text-sm);
+        line-height: var(--line-snug);
+      }
+
+      @media print {
+        .parloa-resume .competency-grid {
+          gap: 0.45rem;
+        }
+
+        .parloa-resume .competency-column {
+          padding: 0.34rem 0.38rem;
+        }
+
+        .parloa-resume .competency-column .chip-list.dense {
+          gap: 0.18rem;
+        }
+
+        .parloa-resume .competency-column .chip-list.dense li {
+          padding: 0.09rem 0.24rem;
+          font-size: 6.45pt;
+          line-height: 1.22;
+        }
+
+        .parloa-resume .role-fit-grid {
+          gap: 0.35rem;
+          break-inside: avoid;
+        }
+
+        .parloa-resume .role-fit-card {
+          padding: 0.32rem 0.38rem;
+        }
+
+        .parloa-resume .role-fit-card h3 {
+          font-size: 6.65pt;
+        }
+
+        .parloa-resume .role-fit-card p {
+          font-size: 7.1pt;
+          line-height: 1.28;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article class="resume parloa-resume">
+      <header class="resume-header">
+        <h1>Nathan Walker</h1>
+        <p class="tagline">Solutions Architecture · Enterprise Voice AI · Contact Center Agentic Automation</p>
+        <div class="contact-row">
+          <span>Austin, TX</span>
+          <a href="mailto:nwalker85@gmail.com">nwalker85@gmail.com</a>
+          <a href="https://linkedin.com/in/nwalker85">linkedin.com/in/nwalker85</a>
+          <a href="https://github.com/nwalker85">github.com/nwalker85</a>
+          <a href="https://nwalker.cc">nwalker.cc</a>
+        </div>
+      </header>
+
+      <section class="metrics" aria-label="Career highlights">
+        <div class="metric">
+          <span class="metric-value">$50M+</span>
+          <span class="metric-label">Enterprise AI revenue influenced through discovery, demos, value engineering, and technical win strategy</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">100+</span>
+          <span class="metric-label">Production voice AI deployments across Genesys, NICE, Five9, AWS Connect, SIP/WebRTC, and API ecosystems</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">38%</span>
+          <span class="metric-label">PoC win rate under evaluation frameworks with defined success criteria and measurable value cases</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">3 → 50</span>
+          <span class="metric-label">Global solution architecture practice built from a 3-person team across NA, EMEA, APAC, and LATAM</span>
+        </div>
+      </section>
+
+      <section class="resume-section" id="summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Summary</h2>
+        <p class="lede">
+          Voice AI solutions architect and presales leader with 15+ years across enterprise conversational AI, contact
+          center operations, and agentic systems. Open to FTE and contract. Led discovery, solution design, value
+          engineering, executive demos, PoC governance, and technical win strategy for SoundHound/Amelia conversational AI
+          through its 2025 analyst cycle (Gartner MQ Visionary, Everest PEAK Leader, IDC MarketScape Leader); influenced
+          $50M+ in enterprise AI revenue and led 100+ production deployments into the platforms enterprise voice AI sells
+          into. Still hands-on: trains and tunes classifiers and builds voice pipelines. North American footprint across
+          healthcare, financial services, utilities, retail, and regulated service environments.
+        </p>
+      </section>
+
+      <section class="resume-section" id="competencies" aria-labelledby="competencies-heading">
+        <h2 id="competencies-heading">Core Competencies</h2>
+        <div class="competency-grid">
+          <div class="competency-column">
+            <h3>SE / SA Motion</h3>
+            <ul class="chip-list dense">
+              <li>Discovery Workshops</li>
+              <li>Executive Demos</li>
+              <li>PoC Governance</li>
+              <li>Value Engineering</li>
+              <li>RFP / RFI</li>
+              <li>Deal Engineering</li>
+              <li>ROI Modeling</li>
+              <li>Vendor Selection</li>
+            </ul>
+          </div>
+          <div class="competency-column">
+            <h3>Voice &amp; Telephony</h3>
+            <ul class="chip-list dense">
+              <li>SIP / WebRTC</li>
+              <li>MRCP</li>
+              <li>LiveKit</li>
+              <li>Deepgram / Whisper</li>
+              <li>ElevenLabs</li>
+              <li>Voice UX / Barge-in</li>
+              <li>DTMF / Recovery</li>
+              <li>Escalation Design</li>
+            </ul>
+          </div>
+          <div class="competency-column">
+            <h3>Agentic AI</h3>
+            <ul class="chip-list dense">
+              <li>LangGraph</li>
+              <li>MCP</li>
+              <li>RAG</li>
+              <li>NLU / Intent</li>
+              <li>Human-in-Loop</li>
+              <li>Evaluation Design</li>
+              <li>Judge LLM</li>
+              <li>Guardrails</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume-section" id="role-fit" aria-labelledby="role-fit-heading">
+        <h2 id="role-fit-heading">Role Fit</h2>
+        <div class="role-fit-grid">
+          <div class="role-fit-card">
+            <h3>Technology</h3>
+            <p>Architects telephony-grade voice AI: SIP/WebRTC, STT/TTS, voice UX (turn-taking, barge-in, fallback), CCaaS selection, and agentic orchestration.</p>
+          </div>
+          <div class="role-fit-card">
+            <h3>Value</h3>
+            <p>Builds executive business cases on contact center economics — containment, AHT, occupancy, attrition planning, CSAT/NPS.</p>
+          </div>
+          <div class="role-fit-card">
+            <h3>Governance</h3>
+            <p>Designs accountability into agent architectures: audit evidence, authority boundaries, human-in-the-loop, and PoC win discipline.</p>
+          </div>
+          <div class="role-fit-card">
+            <h3>Regulatory</h3>
+            <p>Fluent across HIPAA/HITECH, SOC 2, NIST AI RMF, ISO/IEC 42001, GDPR, and EU AI Act for regulated enterprise buyers.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume-section" id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+
+        <section class="job" aria-labelledby="intelepeer-role">
+          <div class="job-meta">
+            <time datetime="2026-07">Jul 2026</time>
+            <span>Remote</span>
+          </div>
+          <h3 class="job-employer" id="intelepeer-employer">IntelePeer</h3>
+          <p class="job-title-line" id="intelepeer-role">
+            Senior AI Solutions Engineer
+          </p>
+          <ul class="bullet-list">
+            <li>
+              Designed a partner chat integration for a carrier-first, voice-only platform so a live deal could offer
+              digital alongside voice — the gap Salesforce would otherwise have used to take the account. Wrote it up as a
+              reusable sidecar; CRO framed it as a new SKU.
+            </li>
+          </ul>
+        </section>
+
+        <section class="job" aria-labelledby="consulting-role">
+          <div class="job-meta">
+            <time datetime="2026-02">Feb 2026</time>
+            <span>-</span>
+            <time datetime="2026-06">Jun 2026</time>
+            <span>Austin, TX</span>
+          </div>
+          <h3 class="job-employer" id="consulting-employer">Ravenhelm, LLC</h3>
+          <p class="job-title-line" id="consulting-role">
+            Principal Consultant <span class="sep">-</span> Agentic AI Architecture &amp; Accountability
+          </p>
+          <ul class="bullet-list">
+            <li>
+              Advised enterprise and regulated-market clients on agentic AI architecture, voice AI systems, and
+              accountability patterns for production use cases where auditability, authority boundaries, and operational
+              risk matter.
+            </li>
+            <li>
+              Built reference architecture for policy-aware AI agent accountability: ledger-backed audit chains producing
+              evidence-backed answers about agent authority, delegation, scope, execution, and downstream effect.
+            </li>
+            <li>
+              Operated a production-grade prototype stack: LangGraph multi-agent orchestration, MCP tool gateways with
+              credential management and audit logging, LiveKit voice pipelines, local LLM inference, Langfuse observability,
+              and governed human-in-the-loop workflows.
+            </li>
+          </ul>
+        </section>
+
+        <section class="job" aria-labelledby="quant-role">
+          <div class="job-meta">
+            <time datetime="2025-11">Nov 2025</time>
+            <span>-</span>
+            <time datetime="2026-01">Jan 2026</time>
+            <span>Remote</span>
+          </div>
+          <h3 class="job-employer" id="quant-employer">Quant</h3>
+          <p class="job-title-line" id="quant-role">
+            Vice President, Business Solutions <span class="sep">-</span> GTM &amp; Agentic Business Lifecycle
+          </p>
+          <ul class="bullet-list">
+            <li>
+              Led enterprise solution architecture and customer-facing technical alignment across Sales, Product, and
+              Delivery for an agentic AI platform: discovery, business requirements, architecture, ROI narrative, and risk
+              controls.
+            </li>
+            <li>
+              Built the AI discovery and qualification toolkit — opportunity qualification framework, use-case discovery
+              guide, solution discovery workbook, BRD templates, and strategic demo playbook — plus a value engineering
+              framework with CFO-ready ROI formulas linking operational and CX improvements to financial outcomes.
+            </li>
+            <li>
+              Designed the Agentic Business Lifecycle, aligning presales, demo engineering, workflow automation, human
+              approvals, evidence capture, and KPI feedback loops into a governed customer execution model.
+            </li>
+          </ul>
+        </section>
+
+        <section class="job" aria-labelledby="amelia-role">
+          <div class="job-meta">
+            <time datetime="2019-04">Apr 2019</time>
+            <span>-</span>
+            <time datetime="2025-10">Oct 2025</time>
+            <span>Austin, TX / Remote</span>
+          </div>
+          <h3 class="job-employer" id="amelia-employer">
+            SoundHound AI / Amelia <span class="aka">(formerly IPsoft Amelia)</span>
+          </h3>
+          <p class="job-title-line" id="amelia-role">Senior Director, AI for Enterprise &amp; Global Solution Architecture</p>
+
+          <div class="job-subsection">
+            <h4>Enterprise Voice AI &amp; Technical Sales at Scale</h4>
+            <ul class="bullet-list">
+              <li>
+                Led AI solution sales and solution architecture for enterprise conversational and voice AI across contact
+                center, HR operations, healthcare, financial services, utilities, retail, and federal-adjacent accounts.
+              </li>
+              <li>
+                Led <strong>100+ production deployments</strong> across Genesys, NICE, Five9, Talkdesk, AWS Connect,
+                SIP/WebRTC telephony, EHRs, CRMs, ITSM systems, and backend APIs; evaluated competing CCaaS, ASR/TTS, and
+                LLM stacks and designed integration architectures for enterprise voice at production call volumes.
+              </li>
+              <li>
+                Influenced <strong>$50M+ in enterprise AI outcomes</strong> — including $17M Visionworks, $9M Southern
+                California Edison competitive displacement, and $6.25M Chipotle — by architecting the technical win from
+                discovery through PoC design, competitive positioning, executive narrative, and close.
+              </li>
+              <li>
+                Won McKesson's HR Operations opportunity with a Salesforce-integrated conversational AI solution;
+                downselected through a multi-round HCA RFP for enterprise IT Service Desk and HR conversational AI across a
+                multi-site workforce.
+              </li>
+            </ul>
+          </div>
+
+          <div class="job-subsection">
+            <h4>Value Engineering &amp; Win Discipline</h4>
+            <ul class="bullet-list">
+              <li>
+                Developed the value engineering practice: discovery workshops, ROI workbooks, and executive business-case
+                templates quantifying containment, AHT reduction, occupancy relief, and CSAT/NPS impact — grounded in
+                contact center labor economics, where 30 seconds of AHT across millions of contacts is a headcount-scale
+                saving.
+              </li>
+              <li>
+                Created <em>Architecting Certainty</em> and PoC governance frameworks with success criteria, golden
+                datasets, and demo standards, contributing to a <strong>38% PoC win rate</strong> and
+                <strong>114% lift</strong> in overall sales win conversion.
+              </li>
+              <li>
+                Built the healthcare AI practice from inception across payer, provider/IDN, and specialty accounts
+                including UMiami Health, HCA, Sutter, Wellstar, Optum, McKesson, VSP, and Manitoba Blue Cross.
+              </li>
+            </ul>
+          </div>
+
+          <div class="job-subsection">
+            <h4>Practice, Applied ML &amp; Analyst Work</h4>
+            <ul class="bullet-list">
+              <li>
+                Trained and optimized TensorFlow, PyTorch, and BERT-based intent classifiers — training-data curation,
+                F1/precision/recall, confusion matrices, confidence thresholds, and production iteration, including
+                A/B-tested DNN classifiers for McKesson intent recognition.
+              </li>
+              <li>
+                Founded and scaled the global solution architecture practice from 3 to ~50 engineers across four regions
+                and four business units after the SoundHound acquisition; led 2025 analyst placements end-to-end
+                (Everest Group PEAK Leader, IDC MarketScape Leader, Gartner MQ Visionary).
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="job" aria-labelledby="onesupport-role">
+          <div class="job-meta">
+            <time datetime="2007-02">Feb 2007</time>
+            <span>-</span>
+            <time datetime="2018-09">Sep 2018</time>
+            <span>Austin, TX</span>
+          </div>
+          <h3 class="job-employer" id="onesupport-employer">
+            OneSupport <span class="aka">(formerly teleNetwork, Inc.)</span>
+          </h3>
+          <p class="job-title-line" id="onesupport-role">
+            Operations Manager <span class="sep">-</span> Technical Operations &amp; Automation
+          </p>
+          <ul class="bullet-list">
+            <li>
+              Ran 40+ person contact center and technical support operations for telecom and broadband clients — queue
+              management, escalation paths, dispatch, WFM, and omnichannel routing — with sustained top-decile quality and
+              CSAT. Operated for over a decade inside the environment enterprise voice AI now sells into.
+            </li>
+            <li>
+              Engineered an internal workflow automation platform and productized it into a client-facing SaaS offering
+              licensed by Frontier Communications at approximately $2M ARR.
+            </li>
+            <li>
+              Converted manual dispatch, escalation, reporting, CRM, and routing patterns into structured automation with
+              operational controls and measurable service consistency.
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="resume-section" id="platforms" aria-labelledby="platforms-heading">
+        <h2 id="platforms-heading">Selected Technical Depth</h2>
+        <div class="split-subsection">
+          <h3>Voice &amp; CX</h3>
+          <p>SIP, WebRTC, MRCP, LiveKit, Twilio, Deepgram, Whisper, ElevenLabs, Genesys, NICE, Five9, Talkdesk, AWS Connect; voice UX (turn-taking, barge-in, DTMF fallback, disambiguation); escalation and containment.</p>
+          <h3>AI / Agents</h3>
+          <p>NLU/intent modeling, LangGraph, LangChain, MCP, RAG, tool calling, evaluation pipelines, Judge LLM patterns, human-in-the-loop approval, TensorFlow, PyTorch, BERT, local inference.</p>
+          <h3>Cloud &amp; Data</h3>
+          <p>AWS, Azure, GCP, Docker, Kubernetes/k3s, Terraform, Postgres/pgvector, Redis, ClickHouse, Neo4j; OAuth2/SAML enterprise identity integrations.</p>
+          <h3>Governance</h3>
+          <p>HIPAA/HITECH, SOC 2, NIST AI RMF, ISO/IEC 42001, GDPR, EU AI Act; PoC and evaluation governance; audit evidence patterns for AI agent behavior.</p>
+        </div>
+      </section>
+
+      <section class="resume-section" id="speaking" aria-labelledby="speaking-heading">
+        <h2 id="speaking-heading">Research · Speaking · Education</h2>
+        <div class="split-subsection">
+          <h3>Research</h3>
+          <p><cite>Agentropy</cite> (preprint, DOI 10.5281/zenodo.20818597) — conservation dynamics in resource-constrained multi-agent systems.</p>
+          <h3>Speaking &amp; Analyst</h3>
+          <p>Gartner, Forrester, NVIDIA GTC, HIMSS, Customer Contact Week; MBA guest lectures; Everest Group, IDC, Gartner MQ briefing support.</p>
+          <h3>Education</h3>
+          <p>A.A.S., Computer Networking - ITT Technical Institute (2006) · IBM Data Science Professional Certificate · CCNA (prev.)</p>
+        </div>
+      </section>
+
+      <footer class="page-running-footer resume-footer">
+        <span>NATHAN WALKER · nwalker.cc</span>
+      </footer>
+    </article>
+  </body>
+</html>
